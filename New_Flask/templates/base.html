@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Coffee Lovers - Насолоджуйся ароматом</title>
 </head>
 <body>
-        <header>
+
+    <header>
         <div class="logo">☕ Coffee Lovers</div>
         <nav>
             <ul>
@@ -19,6 +20,27 @@
         </nav>
     </header>
 
-    {% block body %}{% endblock %}
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Приєднуйся до кавового світу!</h2>
+                <p>Свіжообсмажена кава, яка розбудить твої відчуття ☕</p>
+                <a href="#" class="cta-button">Замовити зараз</a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
