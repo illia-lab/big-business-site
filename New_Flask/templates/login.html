@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Увійти — Coffee Lovers{% endblock %}
+
+{% block body %}
+<section class="auth-form">
+    <h1>Увійти</h1>
+    <form method="post" action="/login/singin">
+        <input type="text" name="username" placeholder="Ім'я користувача" required>
+        <input type="password" name="password" placeholder="Пароль" required>
+        <button type="submit" class="cta-button">Увійти</button>
+    </form>
+    <p>Ще немає акаунту? <a href="/register" class="auth-link">Зареєструватися</a></p>
+</section>
+{% endblock %}
